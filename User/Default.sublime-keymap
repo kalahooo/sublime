@@ -1,0 +1,49 @@
+[
+    { "keys": ["ctrl+shift+o"], "command": "fuzzy_start_from_file" },
+    { "keys": ["ctrl+shift+v"], "command": "paste" },
+    { "keys": ["ctrl+v"], "command": "paste_and_indent" },
+    { "keys": ["ctrl+1"], "command": "togglesidebar"},
+    { "keys": ["ctrl+shift+1"], "command": "jumpsidebar"},
+    { "keys": ["ctrl+g"], "command": "find_next" },
+    { "keys": ["ctrl+shift+p"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": ""} },
+    { "keys": ["ctrl+alt+p"], "command": "goto_symbol_in_project" },
+    { "keys": ["alt+ctrl+down"], "command": "goto_definition" },
+    {
+        "keys": ["alt+ctrl+up"],
+        "command": "hyper_click_jump",
+        "context": [{ "key": "hyper_click_jump_line", "operand": true }]
+    },
+    //vim
+    { "keys": ["j", "j"], "command": "_enter_normal_mode", "args": {"mode": "mode_insert"}, "context": [{"key": "vi_insert_mode_aware"}] },
+
+    //vim goto definition
+    { "keys": ["ctrl+b"], "command": "goto_definition" },
+    { "keys": ["ctrl+alt+b"], "command": "goto_reference" },
+    { "keys": ["ctrl+shift+b"], "command": "hyper_click_jump" },
+    {
+        "keys": ["ctrl+shift+b"],
+        "command": "hyper_click_jump",
+        "context": [{ "key": "hyper_click_jump_line", "operand": true }]
+    },
+
+    { "keys": ["ctrl+n"], "command": "move", "args": {"by": "lines", "forward": true}, "context": [ { "key": "overlay_visible", "operator": "equal", "operand": true }  ] },
+    { "keys": ["ctrl+p"], "command": "move", "args": {"by": "lines", "forward": false}, "context": [ { "key": "overlay_visible", "operator": "equal", "operand": true } ] },
+
+    { "keys": ["ctrl+n"], "command": "move", "args": {"by": "lines", "forward": true}, "context": [ { "key": "auto_complete_visible", "operator": "equal", "operand": true } ] },
+    { "keys": ["ctrl+p"], "command": "move", "args": {"by": "lines", "forward": false}, "context": [  { "key": "auto_complete_visible", "operator": "equal", "operand": true } ] },
+
+    //vim rebind esc when find panec active
+    { "keys": ["escape"], "command": "hide_panel", "args": {"cancel": true},
+        "context":
+        [
+            { "key": "panel_visible", "operator": "equal", "operand": true }
+        ]
+    },
+
+    //origami
+    { "keys": ["ctrl+w", "ctrl+l"], "command": "travel_to_pane", "args": {"direction": "right"} },
+    { "keys": ["ctrl+w", "ctrl+h"], "command": "travel_to_pane", "args": {"direction": "left"} },
+    { "keys": ["ctrl+w", "ctrl+j"], "command": "travel_to_pane", "args": {"direction": "down"} },
+    { "keys": ["ctrl+w", "ctrl+k"], "command": "travel_to_pane", "args": {"direction": "up"} },
+    { "keys": ["ctrl+w", "ctrl+c"], "command": "destroy_pane", "args": {"direction": "self"} },
+]

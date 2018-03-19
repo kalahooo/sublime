@@ -1,0 +1,48 @@
+[
+    { "keys": ["super+shift+o"], "command": "fuzzy_start_from_file" },
+    { "keys": ["super+shift+v"], "command": "paste" },
+    { "keys": ["super+v"], "command": "paste_and_indent" },
+    { "keys": ["super+1"], "command": "togglesidebar"},
+    { "keys": ["super+shift+1"], "command": "jumpsidebar"},
+    { "keys": ["super+g"], "command": "find_next" },
+    { "keys": ["super+w"], "command": "close_file" },
+    { "keys": ["super+shift+p"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": ""} },
+    { "keys": ["super+e"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+    { "keys": ["shift+super+e"], "command": "goto_symbol_in_project" },
+    { "keys": ["alt+super+down"], "command": "goto_definition" },
+    {
+        "keys": ["alt+super+up"],
+        "command": "hyper_click_jump",
+        "context": [{ "key": "hyper_click_jump_line", "operand": true }]
+    },
+    //vim
+    // { "keys": ["j", "j"], "command": "_enter_normal_mode", "args": {"mode": "mode_insert"}, "context": [{"key": "vi_insert_mode_aware"}] },
+    { "keys": ["j", "j"], "command": "six_press_key", "args": {"key": "<Esc>"}, "context": [{"key": "six_is_in_insert_mode"}] },
+    // //vim switch view
+    { "keys": ["ctrl+h"], "command": "prev_view" },
+    { "keys": ["ctrl+l"], "command": "next_view" },
+
+    //vim goto definition
+    { "keys": ["super+b"], "command": "goto_definition" },
+    { "keys": ["super+alt+b"], "command": "goto_reference" },
+    { "keys": ["super+shift+b"], "command": "hyper_click_jump" },
+    {
+        "keys": ["super+shift+b"],
+        "command": "hyper_click_jump",
+        "context": [{ "key": "hyper_click_jump_line", "operand": true }]
+    },
+
+    //vim command pallete
+    { "keys": ["super+shift+j"], "command": "move", "args": {"by": "lines", "forward": true} },
+    { "keys": ["super+shift+k"], "command": "move", "args": {"by": "lines", "forward": false} },
+    { "keys": ["super+shift+l"], "command": "move", "args": {"by": "characters", "forward": true} },
+    { "keys": ["super+shift+h"], "command": "move", "args": {"by": "characters", "forward": false} },
+
+    //vim rebind esc when find panec active
+    { "keys": ["escape"], "command": "hide_panel", "args": {"cancel": true},
+        "context":
+        [
+            { "key": "panel_visible", "operator": "equal", "operand": true }
+        ]
+    },
+]

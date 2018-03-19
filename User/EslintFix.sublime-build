@@ -1,0 +1,7 @@
+{
+    //"shell_cmd": "$folder/node_modules/.bin/eslint --fix $file"
+    // "shell_cmd": "prettier $file --write; eslint --fix $file"
+    // "shell_cmd": "$folder/node_modules/.bin/eslint --fix $file"
+    // "shell_cmd": "eslint --fix $file"
+    "shell_cmd": "npm run eslint $file"
+}

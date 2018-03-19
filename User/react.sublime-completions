@@ -1,0 +1,89 @@
+{
+    "completions":
+        [
+            {
+                "trigger": "rcc",
+                "contents": "import React from 'react'\n\nclass ${1:} extends React.PureComponent {\n\trender () {\n\t\t${2:}\n\t}\n}\n\nexport { ${1:} }"
+            },
+            {
+                "trigger": "rcf",
+                "contents": "import React from 'react'\n\nfunction ${1:} (props) {\n\treturn (\n\t\t${2:}\n\t)\n}\n\nexport { ${1:} }"
+            },
+            {
+                "trigger": "rcfpt",
+                "contents": "import React from 'react'\n\nfunction ${1:} (props) {\n\treturn (\n\t\t${2:}\n\t)\n}\n\n${1:}.propTypes = {}\n\n${1:}.defaultProps = {}\n\n\nexport { ${1:} }"
+            },
+            {
+                "trigger": "rpt",
+                "contents": "static propTypes = {\n\t$1\n}"
+            },
+            {
+                "trigger": "rdp",
+                "contents": "static defaultProps = {\n\t$1\n}"
+            },
+            {
+                "trigger": "rct",
+                "contents": "static contextTypes = {\n\t$1\n}"
+            },
+            {
+                "trigger": "rcct",
+                "contents": "static childContextTypes = {\n\t$1\n}"
+            },
+            {
+                "trigger": "rgcc",
+                "contents": "getChildContext () {\n\t$1\n}"
+            },
+            {
+                "trigger": "rcwm",
+                "contents": "componentWillMount () {\n\t$1\n}"
+            },
+            {
+                "trigger": "rcdm",
+                "contents": "componentDidMount () {\n\t$1\n}"
+            },
+            {
+                "trigger": "rcwrp",
+                "contents": "componentWillReceiveProps (nextProps) {\n\t$1\n}"
+            },
+            {
+                "trigger": "rscu",
+                "contents": "shouldComponentUpdate (nextProps, nextState) {\n\t$1\n}"
+            },
+            {
+                "trigger": "rcwu",
+                "contents": "componentWillUpdate (nextProps, nextState) {\n\t$1\n}"
+            },
+            {
+                "trigger": "rcdu",
+                "contents": "componentDidUpdate (prevProps, prevState) {\n\t$1\n}"
+            },
+            {
+                "trigger": "rcwun",
+                "contents": "componentWillUnmount () {\n\t$1\n}"
+            },
+            {
+                "trigger": "PropTypes",
+                "contents": "PropTypes."
+            },
+            {
+                "trigger": "constructor",
+                "contents": "constructor () {\n\tsuper()\n\t$1\n}"
+            },
+            {
+                "trigger": "cccc",
+                "contents": "console.log($1)"
+            },
+            {
+                "trigger": "deb",
+                "contents": "debugger"
+            },
+            {
+                "trigger": "rncc",
+                "contents": "import React from 'react'\nimport { View } from 'react-native'\n\nclass ${1:} extends React.PureComponent {\n\trender () {\n\t\t${2:}\n\t}\n}\n\nexport { ${1:} }"
+            },
+            {
+                "trigger": "rdsih",
+                "contents": "dangerouslySetInnerHTML={{ __html: $1 }}"
+            }
+        ]
+}
