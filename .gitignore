@@ -1,0 +1,8 @@
+*Package*
+.DS_Store
+.logs
+PyV8
+*.cache
+jsonschema
+zzz*
+
