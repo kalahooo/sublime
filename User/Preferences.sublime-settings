@@ -17,24 +17,32 @@
 		"*.swf",
 		"*.jar",
 		"*.zip",
-		"*bundle*",
 		"node_modules/*",
-		"public/*",
-		"build/*"
+		"build/*",
+		"target/*"
 	],
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/SublimeLinter/GitHub (SL).tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Sixteen.sublime-color-scheme",
 	"drag_text": false,
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"find_selected_text": true,
-	"font_size": 12,
+	"font_options":
+	[
+		"subpixel_antialias",
+		"no_bold",
+		"no_round",
+		"gdi"
+	],
+	"font_size": 14,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"Vintageous",
+		"VintageousPluginSurround"
 	],
 	"indent_guide_options":
 	[
@@ -58,5 +66,6 @@
 	"vintageous_use_ctrl_keys": true,
 	"vintageous_use_sys_clipboard": true,
 	"wide_caret": false,
-	"word_wrap": false
+	"word_wrap": false,
+	"auto_complete_delay": 250,
 }

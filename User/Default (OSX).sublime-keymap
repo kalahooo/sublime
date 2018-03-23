@@ -1,15 +1,13 @@
 [
-    { "keys": ["ctrl+shift+o"], "command": "fuzzy_start_from_file" },
-    { "keys": ["ctrl+shift+v"], "command": "paste" },
-    { "keys": ["ctrl+v"], "command": "paste_and_indent" },
-    { "keys": ["ctrl+1"], "command": "togglesidebar"},
-    { "keys": ["ctrl+shift+1"], "command": "jumpsidebar"},
-    { "keys": ["ctrl+g"], "command": "find_next" },
-    { "keys": ["ctrl+shift+p"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": ""} },
-    { "keys": ["ctrl+alt+p"], "command": "goto_symbol_in_project" },
-    { "keys": ["alt+ctrl+down"], "command": "goto_definition" },
+    { "keys": ["super+shift+v"], "command": "paste" },
+    { "keys": ["super+v"], "command": "paste_and_indent" },
+    { "keys": ["super+1"], "command": "togglesidebar"},
+    { "keys": ["super+shift+1"], "command": "jumpsidebar"},
+    { "keys": ["super+g"], "command": "find_next" },
+    { "keys": ["super+shift+p"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": ""} },
+    { "keys": ["alt+super+down"], "command": "goto_definition" },
     {
-        "keys": ["alt+ctrl+up"],
+        "keys": ["alt+super+up"],
         "command": "hyper_click_jump",
         "context": [{ "key": "hyper_click_jump_line", "operand": true }]
     },
